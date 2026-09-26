@@ -1,0 +1,13 @@
+{
+  "name": "rocket-money-clone",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace next-app",
+    "dev:next": "npm run dev --workspace next-app",
+    "dev:react": "npm run dev --workspace react-app",
+    "dev:static": "cd apps/static-app && python -m http.server 8000"
+  }
+}
